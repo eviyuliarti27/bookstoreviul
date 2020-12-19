@@ -1,0 +1,64 @@
+.content{
+    background-color: #fbf0f5;
+    position: relative;
+    width: 50rem;
+    height: 33.5rem;
+}
+
+.content-wrap{
+    position: absolute;
+    left: -7%;
+    right: -7%;
+}
+
+.thumb-img {
+    position: relative;
+    height: 145px;
+    width: 125px;
+    margin: 20px 0px;
+
+    img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: contain;
+    }
+}
+
+.text{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.card-body{
+    padding: 19px 10px 10px 22px;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #f9e4ee;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .input-group {
+    left: 10%;
+    width: 22%;
+  }
+
+  .input-group-append {
+    margin-left: -34px;
+}
+
+  .btn-cart {
+    background-color: #ce82a5;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.btn-filter{
+    color: #ce82a5;
+    font-size: 15px;
+    left: 2%;
+}

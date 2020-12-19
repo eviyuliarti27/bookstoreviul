@@ -1,0 +1,46 @@
+.content{
+    background-color: #fbf0f5;
+    position: relative;
+    width: 15rem;
+    height: 35rem;
+    float: right;
+}
+
+.content-wrap{
+    position: absolute;
+    left: -7%;
+    right: -7%;
+}
+
+    .thumb-img {
+        position: relative;
+        height: 135px;
+        width: 125px;
+        left: 27%;
+        margin: 14px 0px;
+
+        img {
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: contain;
+        }
+    }
+
+    .text-tr{
+        font-size: 15px;
+        color: #888282;
+        font-weight: bold;
+    }
+
+    .card-body{
+        padding: 19px 10px 10px 22px;
+    }
+
+    .text-table {
+        color: #a5a0a0;
+    }
+
+
+  .btn-trash {
+    color: #ce82a5;
+}

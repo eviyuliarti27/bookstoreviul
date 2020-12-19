@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-header></app-header>
+    </div>
+    
+    <div class="col-md-12">
+      <div class="position-relative d-flex justify-content-center text-center mb-2">
+        <div>
+          <h1 class="text mb-1">
+            <span class="text-welcome mr-2">WELCOME</span>
+            <span style="font-size: 36px;">TO MY BOOKSTORE</span></h1>
+          <h6 class="text-philosopher"><span style="font-size: 16.7px;">We ensure the quality of our books the best you can find anywhere</span></h6>
+        </div>
+      </div>
+
+        <ngb-carousel>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <img class="img-fluid w-100 images" src="/assets/image/book9.jpg" alt="image">
+            </div>
+            <div class="carousel-caption title">
+              <div class="text-title">
+                <div class="text-item">
+                  <span>Newest Editions Out</span>
+                </div>
+                <div class="mt-2">
+                  <label type="button" class="btn btn-cart btn-sm rounded-0 mb-0">Find Book</label>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <img class="img-fluid w-100 images" src="/assets/image/book13.jpg" alt="image">
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <img class="img-fluid w-100 images" src="/assets/image/book1.jpg" alt="image">
+            </div>
+          </ng-template>
+        </ngb-carousel>     
+    </div>
+  </div>
+</div>

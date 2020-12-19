@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1",
+      "name": "Be angry but don't blow it",
+      "author": "Lisa Bevere",
+      "price": "Rp 120.000",
+      "image": "/assets/image/img_2.jpg"
+    },
+    {
+        "id": "2",
+        "name": "The Tale of Peter Rabbit",
+        "author": "Beatrix Potter",
+        "price": "Rp 105.000",
+        "image": "/assets/image/img_4.jpg"
+    },
+    {
+        "id": "3",
+        "name": "You are Not What you Weigh",
+        "author": "Lisa Bevere",
+        "price": "Rp 100.000",
+        "image": "/assets/image/img_3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "The Bait of SATAN",
+        "author": "John Bevere",
+        "price": "Rp 110.000",
+        "image": "/assets/image/img_1.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Desaign Anthology",
+        "author": "Issue 18",
+        "price": "Rp 150.000",
+        "image": "/assets/image/img_5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "How Innovation Works",
+        "author": "Matt Ridley",
+        "price": "Rp 150.000",
+        "image": "/assets/image/img_6.jpg"
+    }
+  ]

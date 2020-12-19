@@ -1,0 +1,45 @@
+.images {
+    height: 540px;
+    object-fit: cover;
+}
+
+.text-item{
+    font-size: 29px; 
+    letter-spacing: 1.5px;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-philosopher{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.title{
+    color: white;
+    padding: 11px 0px 23px 0px;
+    text-align: left;
+}
+
+.text-welcome{
+    color: #ce82a5;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.text-title{
+    bottom: 150px;
+    left: 105%;
+    transform: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.btn-cart {
+    background-color: #ce82a5;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}

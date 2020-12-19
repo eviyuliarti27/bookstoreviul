@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-header></app-header>
+    </div>
+    
+      <div class="col-md-12">
+        <div class="content mx-auto">
+            <div class="row content-wrap">
+              <div class="col-md-12 mb-2">
+                <div class="col-md-4 float-left">
+                  <span class="input-group-append">
+                    <button class="btn btn-filter" type="button">
+                        <i class="fas fa-sort-amount-down"></i> filter
+                    </button>
+                  </span>
+                </div>
+                <div class="input-group col-md-4 float-right">
+                  <input class="form-control" type="search" placeholder="search">
+                  <span class="input-group-append">
+                    <button class="btn" type="button" style="color: #ce82a5;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3" *ngFor="let p of dataCatalog">
+                <div class="card mb-3 border-0 " style="max-width: 540px; box-shadow: 0 3px 10px -7px #797979;">
+                  <div class="row g-0" >
+                    <div class="col-md-4">
+                      <div class="thumb-img">
+                        <img src="{{p.image}}" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text mb-0">{{p.name}}</h5>
+                        <p class="card-text" ><small class="text-muted">by : {{p.author}}</small></p>
+                        <p class="card-text" style="font-size: 15px; margin-bottom: 10px; margin-top: -6px;"> {{p.price}}</p>
+                        <div class="mx-auto" style="box-shadow: 0px 1px 6px -3px #000000">
+                          <span class="btn btn-cart rounded-0" type="button" (click)="addBook(p)">
+                            add to cart
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+   </div>
