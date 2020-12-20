@@ -40,5 +40,47 @@
         "author": "Matt Ridley",
         "price": 150000,
         "image": "/assets/image/img_6.jpg"
-    }
+    },
+    {
+        "id": "7",
+        "name": "Desaign Anthology",
+        "author": "Issue 18",
+        "price": 150000,
+        "image": "/assets/image/img_5.jpg"
+    },
+    {
+        "id": "8",
+        "name": "How Innovation Works",
+        "author": "Matt Ridley",
+        "price": 150000,
+        "image": "/assets/image/img_6.jpg"
+    },
+    {
+        "id": "9",
+        "name": "You are Not What you Weigh",
+        "author": "Lisa Bevere",
+        "price": 100000,
+        "image": "/assets/image/img_3.jpg"
+    },
+    {
+        "id": "10",
+        "name": "The Bait of SATAN",
+        "author": "John Bevere",
+        "price": 110000,
+        "image": "/assets/image/img_1.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Be angry but don't blow it",
+        "author": "Lisa Bevere",
+        "price": 120000,
+        "image": "/assets/image/img_2.jpg"
+      },
+      {
+          "id": "12",
+          "name": "The Tale of Peter Rabbit",
+          "author": "Beatrix Potter",
+          "price": 105000,
+          "image": "/assets/image/img_4.jpg"
+      }
   ]

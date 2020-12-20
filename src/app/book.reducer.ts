@@ -8,8 +8,8 @@ export const initialState = loadBookState(); // menggambarkan jika si statenya 0
 const _bookReducer = createReducer(
   initialState,
   on(update, (state:any, prop) => { 
-    saveBookState({ ...state, ...prop.id })
-    return { ...state, ...prop.id }
+    saveBookState({ ...state, ...prop })
+    return { ...state, ...prop }
   }),
 
   on(reset, (state) => {

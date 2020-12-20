@@ -18,16 +18,19 @@ export class ShoppingListComponent implements OnInit {
   public totalPrice: any;
 
   constructor(private catalogService: CatalogService, private store: Store<any>) {
-    const a = localStorage.getItem('itembooks')
-    this.data = JSON.parse(a || '{}');
-    console.log('local, store', this.data);
+  
+    //  this.itemBook = this.store.select('book').subscribe((data:any) => {
+    //   this.cartList = data       
+    //   console.log(this.cartList,'list book');  
+    // });
+    console.log(this.itemBook,'itemBook book');  
    }
-public totalBook:any;
-  ngOnInit(): void {
-    this.itemBook = this.store.select('book').subscribe((data:any) => {
-      this.cartList = data       
-      console.log(this.cartList,'list book');  
-    });
+
+   ngOnInit(): void {
+    const a = localStorage.getItem('itembooks')
+    this.cartList = JSON.parse(a || '{}');
+    console.log('local, store', this.cartList);
+
     this.totalPrice = this.getTotalPrice()
     console.log('tota', this.totalPrice);
     

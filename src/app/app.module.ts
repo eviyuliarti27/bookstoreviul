@@ -17,6 +17,7 @@ import { StoreModule } from '@ngrx/store';
 
 import { HttpClientModule } from '@angular/common/http';
 import { bookReducer } from './book.reducer'
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { bookReducer } from './book.reducer'
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    NgxPaginationModule,
     StoreModule.forRoot({ book: bookReducer }),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

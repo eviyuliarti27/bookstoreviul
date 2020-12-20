@@ -19,7 +19,12 @@ export class CatalogComponent implements OnInit {
   public book:number = 0;
   public itemBook:any;
 
-  constructor(config: NgbCarouselConfig, private catalogService: CatalogService, private store: Store<any>) {
+  public pageSize : any = 6;
+  public page : any = 1;
+
+  constructor(config: NgbCarouselConfig,
+    private catalogService: CatalogService, 
+    private store: Store<any>) {
     config.keyboard = true;
     config.pauseOnHover = true;
   }
@@ -50,6 +55,14 @@ export class CatalogComponent implements OnInit {
         console.log('item', item.id, bookId);
       }
     })    
+  }
+
+  public p :any;
+  public px:any;
+  pageChange(event:any) {
+    console.log('e', event);
+    this.p = event;
+    this.px = this.p * 10;
   }
 
 }

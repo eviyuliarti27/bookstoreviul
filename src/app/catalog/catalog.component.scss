@@ -62,3 +62,31 @@
     font-size: 15px;
     left: 2%;
 }
+
+::ng-deep .ngx-pagination {
+    margin-left: 23rem !important;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    
+}
+
+::ng-deep .ngx-pagination .disabled {
+    color: #ce82a5 !important;
+}
+
+::ng-deep .ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #ce82a5 !important;
+    color: white;
+    cursor: default;
+  }
+
+  ::ng-deep .ngx-pagination li a {
+    display: inline-block;
+    color: #ce82a5 !important;  
+  }
+
+  ::ng-deep .ngx-pagination a:hover { 
+    background-color: #ffd0e6 !important;   
+    color: white; 
+ }

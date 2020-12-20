@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     private router : Router) { 
       const routerActive = this.router.url
       console.log('router', routerActive);
-      if(routerActive == '/home' || routerActive == '/catalog') {
+      if(routerActive == '/home') {
         this.catalogService.setDefault()
       }
   }
