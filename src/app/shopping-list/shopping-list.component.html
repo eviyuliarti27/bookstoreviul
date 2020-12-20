@@ -17,28 +17,18 @@
                   <td>PRICE</td>
                   <td>ACTION</td>
                 </tr>
-                <tr class="text-center" >
+                <tr class="text-center" *ngFor="let item of cartList" >
                   <td>
                     <div class="thumb-img">
-                      <img src="/assets/image/img_1.jpg" alt="...">
+                      <img src="{{item.image}}" alt="...">
                     </div>
                   </td>
-                  <td><h5 class="card-text mb-0 text-tr">The Batlain</h5></td>
-                  <td><p class="card-text text-tr">Lisa</p></td>
-                  <td><p class="card-text text-tr">Rp 12.000</p></td>
-                  <td class="btn-trash"><span type="button"><i class="fa fa-trash"></i></span> </td>
+                  <td><h5 class="card-text mb-0 text-tr">{{item.name}}</h5></td>
+                  <td><p class="card-text text-tr">{{item.author}}</p></td>
+                  <td><p class="card-text text-tr">IDR {{item.price | currency: ' '}}</p></td>
+                  <td class="btn-trash"><span type="button" (click)="removeBook(item.id)"><i class="fa fa-trash"></i></span> </td>
                 </tr>
-                <tr class="text-center">
-                  <td>
-                    <div class="thumb-img">
-                      <img src="/assets/image/img_1.jpg" alt="...">
-                    </div>
-                  </td>
-                  <td><h5 class="card-text mb-0 text-tr">Be angry but don't blow it</h5></td>
-                  <td><p class="card-text text-tr">Lisa</p></td>
-                  <td><p class="card-text text-tr">Rp 12.000</p></td>
-                  <td class="btn-trash"><span type="button"><i class="fa fa-trash"></i></span> </td>
-                </tr>
+            
               </table>
             </div>
           </div>
@@ -47,8 +37,8 @@
           <div class="content mx-auto">
             <div class="mx-auto mt-4" style="width: 150px; border: 2px solid black;">
             </div>
-            <div style="margin: 17px 49px; font-size: 14px; color: #888282;">
-              <span>card total : Rp 120.000</span>
+            <div style="margin: 17px 38px; font-size: 14px; color: #888282; font-weight: 300;">
+              <span>card total : IDR {{totalPrice | currency: ' '}}</span>
             </div>
           </div>
         </div>

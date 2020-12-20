@@ -9,8 +9,14 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
+// import store devtools
+import { StoreDevtoolsModule } from '@ngrx/store-devtools'
+import { environment } from '../environments/environment'; // Angular CLI environment
+// import store module
+import { StoreModule } from '@ngrx/store';
 
+import { HttpClientModule } from '@angular/common/http';
+import { bookReducer } from './book.reducer'
 
 @NgModule({
   declarations: [
@@ -24,7 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({ book: bookReducer }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

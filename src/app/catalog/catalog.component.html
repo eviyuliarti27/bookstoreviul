@@ -2,6 +2,16 @@
   <div class="row">
     <div class="col-md-12">
       <app-header></app-header>
+
+      <!-- <div class="d-flex float-right">
+        <div style="margin-top: 15px;
+        font-size: 14px;
+        color: #ce82a5;">
+          <span><i class="fas fa-shopping-cart"></i></span>
+         <span>{{book}}</span>
+        </div>
+      </div> -->
+      
     </div>
     
       <div class="col-md-12">
@@ -24,7 +34,7 @@
                   </span>
                 </div>
               </div>
-              <div class="col-md-4 mt-3" *ngFor="let p of dataCatalog">
+              <div class="col-md-4 mt-3" *ngFor="let p of dataCatalog; let i = index; ">
                 <div class="card mb-3 border-0 " style="max-width: 540px; box-shadow: 0 3px 10px -7px #797979;">
                   <div class="row g-0" >
                     <div class="col-md-4">
@@ -36,11 +46,12 @@
                       <div class="card-body">
                         <h5 class="card-title text mb-0">{{p.name}}</h5>
                         <p class="card-text" ><small class="text-muted">by : {{p.author}}</small></p>
-                        <p class="card-text" style="font-size: 15px; margin-bottom: 10px; margin-top: -6px;"> {{p.price}}</p>
-                        <div class="mx-auto" style="box-shadow: 0px 1px 6px -3px #000000">
-                          <span class="btn btn-cart rounded-0" type="button" (click)="addBook(p)">
+                        <p class="card-text" style="font-size: 15px; margin-bottom: 10px; margin-top: -6px;">IDR {{p.price | currency: ' '}}</p>
+                        <div class="mx-auto" style="box-shadow: 0px 1px 6px -3px #000000" >
+                          <a class="btn btn-cart rounded-0" type="button" (click)="addBook(p, p.id)" 
+                          [ngClass]="selectedBook[p.id] ? 'disabled' : ' '" >
                             add to cart
-                          </span>
+                          </a>                       
                         </div>
                       </div>
                     </div>
