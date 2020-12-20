@@ -10,7 +10,7 @@ import { CatalogService } from '../services/catalog.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public book:any;
+  public book:any = 0;
 
   constructor(
     private catalogService: CatalogService, 
