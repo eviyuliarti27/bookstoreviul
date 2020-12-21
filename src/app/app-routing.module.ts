@@ -21,7 +21,8 @@ const routes: Routes = [
   {
     path: 'shopping-list',
     component: ShoppingListComponent,
-  }
+  },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
