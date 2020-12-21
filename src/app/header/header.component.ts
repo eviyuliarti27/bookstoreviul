@@ -25,13 +25,14 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.catalogService.getItems().subscribe((data:any) => {
-      this.book = data.length;
+      const book = data.length;
       const databook = data
       console.log('book list', databook);
       localStorage.setItem('itembooks', JSON.stringify(databook));
+      localStorage.setItem('items', JSON.stringify(book));
     });
     
-   
+    this.book = localStorage.getItem('items')
   
   }
 
